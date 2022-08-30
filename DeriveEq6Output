@@ -1,0 +1,37 @@
+DeriveEq6
+ 
+eq3(t) =
+ 
+diff(Tstar(t), t) == T*k*V1(t) - delta*Tstar(t)
+ 
+ 
+eq4(t) =
+ 
+diff(V1(t), t) == -c*V1(t)
+ 
+ 
+eq5(t) =
+ 
+diff(VN(t), t) == N*delta*Tstar(t) - c*VN(t)
+ 
+ 
+eqs2(t) =
+ 
+[diff(Tstar(t), t) == T*k*V1(t) - delta*Tstar(t), diff(V1(t), t) == -c*V1(t), diff(VN(t), t) == N*delta*Tstar(t) - c*VN(t)]
+ 
+ 
+Tstar =
+ 
+(C3*T*k*exp(-delta*t))/(c - delta) - (C1*T*k*exp(-c*t))/(c - delta)
+ 
+ 
+V1 =
+ 
+C1*exp(-c*t)
+ 
+ 
+VN =
+ 
+(C3*N*T*delta*k*exp(-delta*t))/(c^2 - 2*c*delta + delta^2) - C1*((N*T*delta*k*exp(-c*t))/(c^2 - 2*c*delta + delta^2) + (N*T*delta*k*t*exp(-c*t))/(c - delta)) - (C2*N*T*delta*k*exp(-c*t))/(c - delta)
+ 
+diary off

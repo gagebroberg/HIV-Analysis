@@ -1,0 +1,34 @@
+Patient107model
+
+<a href = "matlab: helpview('optim','local_min_possible_lsq','CSHelpWindow');">Local minimum possible</a>.
+
+lsqcurvefit stopped because the final change in the sum of squares relative to 
+its initial value is less than the value of the <a href = "matlab: helpview('optim','function_tolerance_lsq','CSHelpWindow');">function tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optimlib:snls:Exit3basic','lsqcurvefit'},{'optimlib:snls:Exit3detailed','1.000000e-06'},true,true);;">stopping criteria details</a>>
+
+p =
+
+   1.0e+05 *
+
+    1.2021    0.0001    0.0000
+
+
+ssr =
+
+   1.1852e+09
+
+
+modelviral =
+
+   1.0e+05 *
+
+  Columns 1 through 13
+
+    1.2329    1.2364    1.2227    1.1338    1.0249    0.9194    0.8229    0.7360    0.6581    0.5885    0.3761    0.2404    0.1536
+
+  Columns 14 through 15
+
+    0.0982    0.0628
+
+diary off
